@@ -74,7 +74,6 @@ const Dashboard = () => {
     (genderedUser) => !matchedUserIds.includes(genderedUser.user_id)
   );
 
-  console.log('filteredGenderedUsers ', filteredGenderedUsers);
   return (
     <>
       {user && (
@@ -93,7 +92,9 @@ const Dashboard = () => {
                     style={{ backgroundImage: 'url(' + genderedUser.url + ')' }}
                     className='card'
                   >
-                    <h3>{genderedUser.first_name}</h3>
+                    <h3 className='chat-picture-name'>
+                      {genderedUser.first_name}
+                    </h3>
                   </div>
                 </TinderCard>
               ))}

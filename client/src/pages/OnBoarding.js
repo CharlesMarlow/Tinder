@@ -23,13 +23,11 @@ const OnBoarding = () => {
   let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    console.log('submitted');
     e.preventDefault();
     try {
       const response = await axios.put('http://localhost:8000/user', {
         formData,
       });
-      console.log(response);
       const success = response.status === 200;
       if (success) navigate('/dashboard');
     } catch (err) {
@@ -186,7 +184,7 @@ const OnBoarding = () => {
               onChange={handleChange}
             />
 
-            <input type='submit' />
+            <input type='submit' className='submit-button'/>
           </section>
 
           <section>

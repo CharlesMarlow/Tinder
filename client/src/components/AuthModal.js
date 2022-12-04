@@ -11,9 +11,6 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
   const [cookies, setCookie, removeCookie] = useCookies(null);
 
   let navigate = useNavigate();
-
-  console.log(email, password, confirmPassword);
-
   const handleClick = () => {
     setShowModal(false);
   };

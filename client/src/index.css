@@ -27,6 +27,7 @@ h2 {
     padding: 12px 30px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
 }
 
 .primary-button:hover {
@@ -43,6 +44,7 @@ h2 {
     border-radius: 30px;
     border: solid 2px rgb(121, 119, 119);
     margin: 6px;
+    cursor: pointer;
 }
 
 .secondary-button:hover {
@@ -67,6 +69,7 @@ nav .nav-button {
     border-radius: 10px;
     border: none;
     margin: 10px;
+    cursor: pointer;
 }
 
 nav .nav-button:disabled {
@@ -207,6 +210,10 @@ nav .logo-container .logo {
     width: 100%
 }
 
+.onboarding form .submit-button {
+    cursor: pointer;
+}
+
 /*-------- Dashboard  --------*/
 .dashboard {
     display: flex;
@@ -286,6 +293,7 @@ nav .logo-container .logo {
     align-items: center;
     padding: 20px;
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .img-container {
@@ -313,4 +321,10 @@ nav .logo-container .logo {
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+/*-------- Chat -----------*/
+
+.chat-picture-name {
+    color: white;
 }
